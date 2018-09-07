@@ -38,8 +38,8 @@ namespace BookClub.Models
         [Display(Name = "Book Rating")]
         public int Rating { get; set; }
 
-       
 
+        public virtual ICollection<Book> Books { get; set; }
 
     }
 }

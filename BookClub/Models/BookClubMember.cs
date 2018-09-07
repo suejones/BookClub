@@ -24,9 +24,11 @@ namespace BookClub.Models
         [Display(Name = "Member Last Name")]
         public string MemberLastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "What is you email address?")]
         [Display(Name = "Member email address")]
         public MailAddress MemberEmail { get; set; }
+
+        public virtual ICollection<BookClubMember> BookClubMembers { get; set; }
 
     }
 }
