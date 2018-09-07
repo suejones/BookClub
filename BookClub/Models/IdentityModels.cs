@@ -29,5 +29,9 @@ namespace BookClub.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BookClub.Models.Book> Books { get; set; }
+
+        public System.Data.Entity.DbSet<BookClub.Models.BookLists> BookLists { get; set; }
     }
 }
