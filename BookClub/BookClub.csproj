@@ -210,12 +210,22 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookClubAdmin.cs" />
+    <Compile Include="Models\BookClubCreateViewModel.cs" />
+    <Compile Include="Models\BookClubEditViewModel.cs" />
     <Compile Include="Models\BookClubMember.cs" />
     <Compile Include="Models\BookClubService.cs" />
+    <Compile Include="Models\BookCreateViewModel.cs" />
+    <Compile Include="Models\BookEditViewModel.cs" />
+    <Compile Include="Models\BookListCreateViewModel.cs" />
     <Compile Include="Models\BookLists.cs" />
+    <Compile Include="Models\BookListViewEditModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Library.cs" />
+    <Compile Include="Models\LibraryCreateViewModel.cs" />
+    <Compile Include="Models\LibraryViewEditModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\BookClubMemberCreateViewModel.cs" />
+    <Compile Include="Models\BookClubMemberEditViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
