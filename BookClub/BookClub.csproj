@@ -218,11 +218,11 @@
     <Compile Include="Models\BookEditViewModel.cs" />
     <Compile Include="Models\BookListCreateViewModel.cs" />
     <Compile Include="Models\BookLists.cs" />
-    <Compile Include="Models\BookListViewEditModel.cs" />
+    <Compile Include="Models\BookListEditViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Library.cs" />
     <Compile Include="Models\LibraryCreateViewModel.cs" />
-    <Compile Include="Models\LibraryViewEditModel.cs" />
+    <Compile Include="Models\LibraryEditViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\BookClubMemberCreateViewModel.cs" />
     <Compile Include="Models\BookClubMemberEditViewModel.cs" />
