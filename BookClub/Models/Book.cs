@@ -33,6 +33,9 @@ namespace BookClub.Models
         [Display(Name = "Author Last Name")]
         public string AuthorLastName { get; set; }
 
+        //public ?? BookCover {get;set;}
+
+
         /*[Optional(MessagePartCollection = "Optional.")]*/
         [Range(1, 10)]
         [Display(Name = "Book Rating")]

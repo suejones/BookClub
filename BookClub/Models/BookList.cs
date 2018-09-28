@@ -6,7 +6,7 @@ using System.Web;
 
 namespace BookClub.Models
 {
-    public class BookLists
+    public class BookList
     {
         [Key]
         public int BookListID { get; set; }

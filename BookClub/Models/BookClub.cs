@@ -10,7 +10,7 @@ using System.Web;
 
 namespace BookClub.Models
 {
-    public class BookClubAdmin
+    public class BookClub
     {
             [Key]
             public int BookClubID { get; set; }

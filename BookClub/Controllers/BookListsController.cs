@@ -27,7 +27,7 @@ namespace BookClub.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BookLists bookLists = db.BookLists.Find(id);
+            BookList bookLists = db.BookLists.Find(id);
             if (bookLists == null)
             {
                 return HttpNotFound();
@@ -46,7 +46,7 @@ namespace BookClub.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BookListID,BookListName,BookListType,BookListContent")] BookLists bookLists)
+        public ActionResult Create([Bind(Include = "BookListID,BookListName,BookListType,BookListContent")] BookList bookLists)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace BookClub.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BookLists bookLists = db.BookLists.Find(id);
+            BookList bookLists = db.BookLists.Find(id);
             if (bookLists == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace BookClub.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BookListID,BookListName,BookListType,BookListContent")] BookLists bookLists)
+        public ActionResult Edit([Bind(Include = "BookListID,BookListName,BookListType,BookListContent")] BookList bookLists)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace BookClub.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            BookLists bookLists = db.BookLists.Find(id);
+            BookList bookLists = db.BookLists.Find(id);
             if (bookLists == null)
             {
                 return HttpNotFound();
@@ -109,7 +109,7 @@ namespace BookClub.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            BookLists bookLists = db.BookLists.Find(id);
+            BookList bookLists = db.BookLists.Find(id);
             db.BookLists.Remove(bookLists);
             db.SaveChanges();
             return RedirectToAction("Index");

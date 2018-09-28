@@ -204,12 +204,19 @@
     <Compile Include="Controllers\BookListsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DAL\BookClubConfiguration.cs" />
+    <Compile Include="DAL\BookClubContext.cs" />
+    <Compile Include="DAL\BookClubListContext.cs" />
+    <Compile Include="DAL\BookClubMemberContext.cs" />
+    <Compile Include="DAL\BookContext.cs" />
+    <Compile Include="DAL\Initialiser.cs" />
+    <Compile Include="DAL\LibraryContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Book.cs" />
-    <Compile Include="Models\BookClubAdmin.cs" />
+    <Compile Include="Models\BookClub.cs" />
     <Compile Include="Models\BookClubCreateViewModel.cs" />
     <Compile Include="Models\BookClubEditViewModel.cs" />
     <Compile Include="Models\BookClubMember.cs" />
@@ -217,7 +224,7 @@
     <Compile Include="Models\BookCreateViewModel.cs" />
     <Compile Include="Models\BookEditViewModel.cs" />
     <Compile Include="Models\BookListCreateViewModel.cs" />
-    <Compile Include="Models\BookLists.cs" />
+    <Compile Include="Models\BookList.cs" />
     <Compile Include="Models\BookListEditViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Library.cs" />

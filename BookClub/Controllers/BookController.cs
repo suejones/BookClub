@@ -7,12 +7,13 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using BookClub.Models;
+using BookClub.DAL;
 
 namespace BookClub.Controllers
 {
     public class BookController : Controller
-    {
-        private ApplicationDbContext db = new ApplicationDbContext();
+    {        
+        private BookContext db = new BookContext();
 
         // GET: Books
         public ActionResult Index()
