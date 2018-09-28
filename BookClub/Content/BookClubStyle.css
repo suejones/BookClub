@@ -2,7 +2,7 @@
 }
 
 .jumbotron {
-    background-image: none;
+    background-image: url(../BookClubImages/BookClubimage.png);
     background-size: 100% auto;
 }
 
