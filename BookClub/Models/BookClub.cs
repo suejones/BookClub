@@ -20,9 +20,9 @@ namespace BookClub.Models
             [Display(Name = "Book Club Name")]
             public string BookClubName { get; set; }
 
-            [Required]
-            [Display(Name = "BookClub Admin email address")]
-            public MailAddress AdminEmail { get; set; }
+            //[Required]
+            //[Display(Name = "BookClub Admin email address")]
+            // public MailAddress AdminEmail { get; set; }
 
             [Required(ErrorMessage ="Tell us about your Book Club....")]
             [Display(Name = "BookClub Profile")]
@@ -53,7 +53,9 @@ namespace BookClub.Models
     [Required(ErrorMessage = "List last 10 books readby your Book Club")]
     public IList ReadList { get; set; }
 
+        public virtual ICollection<BookClub> BookClubs { get; set; }
 
-}
+
+    }
     
 }

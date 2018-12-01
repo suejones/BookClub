@@ -140,6 +140,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -206,9 +208,6 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\BookClubConfiguration.cs" />
     <Compile Include="DAL\BookClubContext.cs" />
-    <Compile Include="DAL\BookClubListContext.cs" />
-    <Compile Include="DAL\BookClubMemberContext.cs" />
-    <Compile Include="DAL\BookContext.cs" />
     <Compile Include="DAL\Initialiser.cs" />
     <Compile Include="DAL\LibraryContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -228,6 +227,21 @@
     <Compile Include="Models\BookListEditViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Library.cs" />
+    <Compile Include="Models\Library2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Library2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Library2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Library2.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\LibraryCreateViewModel.cs" />
     <Compile Include="Models\LibraryEditViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -237,6 +251,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\BookClubDB.mdf" />
+    <Content Include="App_Data\BookClubDB_log.ldf">
+      <DependentUpon>BookClubDB.mdf</DependentUpon>
+    </Content>
     <Content Include="BookClubImages\BookClubimage.PNG" />
     <Content Include="Content\BookClubStyle.css" />
     <Content Include="Content\bootstrap.css" />
@@ -248,8 +266,25 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Models\Library2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Library2.edmx</DependentUpon>
+      <LastGenOutput>Library2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Library2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Library2.edmx</DependentUpon>
+      <LastGenOutput>Library2.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Library2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Library2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Library2.edmx.diagram">
+      <DependentUpon>Library2.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -307,7 +342,7 @@
     <Content Include="Views\BookLists\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookClub.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -8,14 +9,14 @@ using System.Web;
 namespace BookClub.DAL
 {
 
-        public class BookClub : DbContext
+        public class BookClubContext : DbContext
         {
-            public BookClub() : base("BookContext")
+            public BookClubContext() : base("BookContext")
             {
             }
 
           
-            public DbSet<BookClub> BookClubs { get; set; }
+            public DbSet<BookClubContext> BookClub { get; set; }
 
             //to prevent EF to pluralize table names
             protected override void OnModelCreating(DbModelBuilder modelBuilder)

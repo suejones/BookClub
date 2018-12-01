@@ -5,10 +5,10 @@ using System.Web;
 
 namespace BookClub.DAL
 {
-    public class BookInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<BookContext>
+    public class BookClubInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<BookClubContext>
     {
 
-        protected override void Seed(BookContext context)
+        protected override void Seed(BookClubContext context)
         {
         }
     }
